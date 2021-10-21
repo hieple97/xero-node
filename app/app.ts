@@ -74,7 +74,7 @@ app.get('/callback', async (req: Request, res: Response) => {
 
 		const authData: any = authenticationData(req, res);
 
-		console.log(authData);
+		console.log({authData});
 
 		res.redirect('/organisation');
 	} catch (err) {
